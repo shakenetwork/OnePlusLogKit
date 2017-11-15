@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/dump_switch" android:key="dump_switch" />
+    <CheckBoxPreference android:title="@string/cputhermal_switch" android:key="cputhermal_switch" />
+    <Preference android:persistent="false" android:title="@string/assert_moudle" android:key="assert">
+        <intent android:targetPackage="com.oem.oemlogkit" android:targetClass="com.oem.oemlogkit.AssertControlActivity" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/audio_moudle" android:key="audio">
+        <intent android:targetPackage="com.oem.oemlogkit" android:targetClass="com.oem.oemlogkit.AudioModuleActivity" />
+    </Preference>
+</PreferenceScreen>

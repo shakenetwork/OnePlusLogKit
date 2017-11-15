@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Log_dump" />
+    <CheckBox android:id="@id/dump_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/dump_switch" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Log_type" />
+    <CheckBox android:enabled="false" android:id="@id/mainlog_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/main_log" />
+    <CheckBox android:id="@id/systemlog_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/system_log" />
+    <CheckBox android:id="@id/event_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/event_log" />
+    <CheckBox android:id="@id/radio_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/radio_log" />
+    <CheckBox android:id="@id/kernel_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/kernel_log" />
+    <CheckBox android:id="@id/tcpdump_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/tcpdump_log" />
+    <Button android:id="@id/loglevel_button" android:layout_width="154.0dip" android:layout_height="wrap_content" android:text="@string/loglevel" />
+    <Button android:id="@id/lograw_button" android:layout_width="154.0dip" android:layout_height="wrap_content" android:text="@string/lograw" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <TextView android:id="@id/log_file_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_file_num" />
+        <EditText android:id="@id/log_file_num" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/log_num_default" android:singleLine="true" android:maxLength="4" android:layout_toRightOf="@id/size_et_title" android:layout_alignBottom="@id/size_et_title" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <TextView android:id="@id/log_file_size_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_file_size" android:layout_below="@id/size_et_title" android:layout_alignLeft="@id/size_et_title" />
+        <EditText android:id="@id/log_file_size" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/log_size_default" android:singleLine="true" android:maxLength="4" android:layout_toRightOf="@id/number_et_title" android:layout_alignBottom="@id/number_et_title" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:id="@id/save_bu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_log" android:layout_weight="1.0" />
+        <Button android:id="@id/clean_bu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_clean" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

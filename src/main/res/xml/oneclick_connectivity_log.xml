@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/oneclick_customerlog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/oneclick_wifilog" android:key="wifi" />
+    <Preference android:title="@string/oneclick_bluetoothlog" android:key="bluetooth" />
+    <Preference android:title="@string/oneclick_nfclog" android:key="nfc" />
+    <Preference android:title="@string/oneclick_gpslog" android:key="gps" />
+    <Preference android:title="@string/oneclick_hot_log" android:key="hot_power_issue" />
+    <Preference android:title="@string/oneclick_lag_log" android:key="lag_issue" />
+    <Preference android:title="@string/oneclick_modem_signal_log" android:key="modem_signal_issue" />
+    <Preference android:title="@string/oneclick_modem_data_log" android:key="modem_data_issue" />
+    <Preference android:title="@string/oneclick_closelog" android:key="closelog" android:summary="@string/oneclick_closelogsummary" />
+    <Preference android:title="@string/oneclick_packagelog" android:key="packagelog" android:summary="@string/oneclick_pack_summary" />
+    <Preference android:title="@string/oneclick_cleanlog" android:key="cleanlog" />
+    <Preference android:layout="@layout/oneclick_warn_message" android:key="warnmessage" />
+</PreferenceScreen>

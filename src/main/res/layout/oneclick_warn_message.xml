@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/holo_red_dark" android:id="@id/warntitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/oneclick_warning" />
+    <TextView android:textSize="15.0dip" android:textColor="@android:color/holo_red_dark" android:id="@id/warncontent1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:text="@string/oneclick_warningmessage1" />
+    <TextView android:textSize="15.0dip" android:textColor="@android:color/black" android:id="@id/warncontent2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:text="@string/oneclick_warningmessage2" />
+</LinearLayout>

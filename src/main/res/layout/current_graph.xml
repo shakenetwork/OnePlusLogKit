@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/average_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/average_current" />
+        <Button android:id="@id/start_button" android:layout_width="154.0dip" android:layout_height="wrap_content" android:text="@string/start" />
+        <Button android:id="@id/stop_button" android:layout_width="154.0dip" android:layout_height="wrap_content" android:text="@string/stop" />
+    </LinearLayout>
+    <com.oem.oemlogkit.WaveView android:id="@id/wave" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" />
+</LinearLayout>

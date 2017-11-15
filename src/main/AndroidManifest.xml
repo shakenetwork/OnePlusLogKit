@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oem.oemlogkit"
+    platformBuildVersionCode="25"
+    platformBuildVersionName="7.1.1"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".OEMLogKitMainActivity"
+            android:label="@string/normal_log"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.oem.oemlogkit.startlog" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="QXDMLog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AudioQXDM"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.oem.oemlogkit.startAUDIOAction" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="DebugMeansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="BatteryInfoShow"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black" />
+        <activity android:name="ConnectivityGrab" />
+        <activity
+            android:name="AdvancedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="CommonOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="GrabOtherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AssertControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="AudioModuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="TcpdumpLog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="SwitchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="LogLevelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="LogRawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="PowerMoniterCurrentActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".RecordNmeaService"
+            android:enabled="true" />
+        <service
+            android:name=".RecordBugreportService"
+            android:enabled="true" />
+
+        <activity
+            android:name="OneClickLogKitMainActivity"
+            android:screenOrientation="portrait" />
+        <receiver android:name="com.oem.oemlogkit.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.oem.oemlogkit.getLog" />
+                <action android:name="com.android.alarm" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

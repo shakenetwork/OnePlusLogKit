@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/charger_test">
+        <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.BatteryInfoShow" />
+    </Preference>
+    <Preference android:title="@string/PowerMoniterCurrent">
+        <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.PowerMoniterCurrentActivity" />
+    </Preference>
+</PreferenceScreen>

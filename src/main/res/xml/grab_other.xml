@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="抓取系统当前ps" android:key="ps" />
+    <Preference android:title="抓取top信息" android:key="top" />
+    <Preference android:title="抓取dumpstate" android:key="dumpstate" />
+    <Preference android:title="获取服务列表service list" android:key="service_list" />
+    <Preference android:title="获取当前cpu频率" android:key="cpu" />
+    <Preference android:title="抓取系统dumpsys信息" android:key="dumpsys" />
+    <Preference android:title="抓取当前cpu温度" android:key="temperature" />
+    <Preference android:title="Battery History" android:key="bettery" />
+</PreferenceScreen>

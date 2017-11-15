@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_otherInfo" />
+    <Button android:id="@id/button_ps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_ps" />
+    <Button android:id="@id/button_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_top" />
+    <Button android:id="@id/button_server" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_server" />
+    <Button android:id="@id/button_dump" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_dump" />
+    <Button android:id="@id/button_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_dumpstate" />
+    <Button android:id="@id/battery_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/battery_dumpstate" />
+    <Button android:id="@id/button_media_db" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dump_media_db" />
+    <Button android:id="@id/button_bugreport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_bugreport" />
+    <Button android:id="@id/button_atrace" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_atrace" />
+    <Button android:id="@id/button_rpm_int" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/grab_rpm_and_interrupts" />
+</LinearLayout>

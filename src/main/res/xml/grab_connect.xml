@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/grab_bluetooth" android:key="bluetooth" android:summary="@string/grab_bluetooth_sumary" />
+    <CheckBoxPreference android:title="@string/grab_bt_snoop" android:key="bt_snoop" android:summary="@string/grab_bt_snoop_sumary" />
+    <CheckBoxPreference android:title="@string/grab_nfc" android:key="nfc" android:summary="@string/grab_nfc_summary" />
+    <CheckBoxPreference android:title="@string/grab_wifi" android:key="wifi" />
+    <CheckBoxPreference android:title="@string/grab_gps" android:key="gps" />
+</PreferenceScreen>

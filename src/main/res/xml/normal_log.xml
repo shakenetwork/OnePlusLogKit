@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/save_log" android:key="save_log" />
+    <Preference android:title="@string/remove_grab" android:key="remove_grab" />
+    <Preference android:title="@string/pack_grab" android:key="pack_grab" />
+    <CheckBoxPreference android:title="@string/tcpdump_log" android:key="save_tcpdump" />
+    <CheckBoxPreference android:title="@string/bugreport_log" android:key="save_bugreport" />
+    <CheckBoxPreference android:title="@string/systrace_switch" android:key="save_systrace" />
+    <CheckBoxPreference android:title="@string/memLog_switch" android:key="save_memLog" />
+    <Preference android:persistent="false" android:title="@string/qxdm_log" android:key="qxdm" android:summary="@string/qxdm_summary">
+        <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.QXDMLog" />
+    </Preference>
+    <Preference android:title="@string/other_log" android:key="other_log">
+        <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.GrabOtherActivity" />
+    </Preference>
+    <Preference android:title="@string/switches" android:key="switches" />
+    <Preference android:title="@string/connection" android:key="wireless_conect">
+        <intent android:targetPackage="com.oem.oemlogkit" android:targetClass="com.oem.oemlogkit.ConnectivityGrab" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/debug_means" android:key="debug">
+        <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.DebugMeansActivity" />
+    </Preference>
+    <Preference android:title="@string/advanced" android:key="advanced" />
+</PreferenceScreen>

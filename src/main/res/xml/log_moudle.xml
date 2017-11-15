@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/normal" android:key="normal">
+        <Preference android:persistent="false" android:title="@string/normal_log" android:key="moudle_norma">
+            <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.SaveAndriodLogActivity" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/special_log" android:key="special">
+        <Preference android:persistent="false" android:title="@string/qxdm_log" android:key="qxdm" android:summary="@string/qxdm_summary">
+            <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.QXDMLog" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

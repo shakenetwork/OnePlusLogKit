@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="empty_array" />
+    <string-array name="audio_functions">
+        <item>Normal Mode</item>
+        <item>Headset Mode</item>
+        <item>LoudSpeaker Mode</item>
+        <item>Headset_LoudSpeaker Mode</item>
+        <item>Speech Enhancement</item>
+        <item>Debug Info</item>
+        <item>Speech Logger</item>
+        <item>Audio Logger</item>
+    </string-array>
+    <string-array name="codec_name">
+        <item>msm8974-taiko-mtp-snd-card/taiko_codec/</item>
+        <item>msm8226-tapan-snd-card/tapan_codec/</item>
+    </string-array>
+    <string-array name="other_log">
+        <item>抓取当前ps信息</item>
+        <item>抓取top信息</item>
+        <item>抓取当前service list信息</item>
+        <item>dump当前系统状态dumpsys</item>
+        <item>dumpstate信息</item>
+        <item>Battery History</item>
+    </string-array>
+    <string-array name="other_log_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="log_type">
+        <item>Kernel</item>
+        <item>Main</item>
+        <item>System</item>
+        <item>Radio</item>
+        <item>Event</item>
+        <item>Tcpdump</item>
+    </string-array>
+    <string-array name="log_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="log_type_def_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="log_level">
+        <item>verbose</item>
+        <item>debug</item>
+        <item>info</item>
+        <item>warning</item>
+        <item>error</item>
+        <item>fatal</item>
+        <item>silent</item>
+    </string-array>
+    <string-array name="log_level_value">
+        <item>V</item>
+        <item>D</item>
+        <item>I</item>
+        <item>W</item>
+        <item>E</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="log_raw">
+        <item>Brief</item>
+        <item>Process</item>
+        <item>Tag</item>
+        <item>Raw</item>
+        <item>Time</item>
+        <item>Threadtime</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="log_raw_value">
+        <item>brief</item>
+        <item>process</item>
+        <item>tag</item>
+        <item>raw</item>
+        <item>time</item>
+        <item>threadtime</item>
+        <item>long</item>
+    </string-array>
+    <string-array name="common_audio_filename">
+        <item>wcd9xxx-core.c</item>
+        <item>wcd9xxx-resmgr.c</item>
+        <item>wcd9xxx-irq.c</item>
+        <item>soc-dapm.c</item>
+        <item>soc-pcm.c</item>
+        <item>msm-pcm-routing-v2.c</item>
+        <item>q6adm.c</item>
+        <item>msm-pcm-q6-v2.c</item>
+        <item>msm8974.c</item>
+        <item>q6asm.c</item>
+        <item>msm-lsm-client.c</item>
+    </string-array>
+</resources>

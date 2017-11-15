@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/redassert_control" />
+    <Button android:id="@id/open_assert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assert_open" />
+    <TextView android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/red_clean" />
+    <Button android:id="@id/clean_assert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clean_assert_button" />
+</LinearLayout>

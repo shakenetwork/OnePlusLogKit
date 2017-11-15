@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="打开log调试" android:key="open_log">
+        <CheckBoxPreference android:title="@string/normal_log" android:key="@string/normal_log" android:summary="选择打开的log调试模块，勾选标示打开" />
+        <Preference android:title="抓取wifi相关log信息" android:key="grab_wifi" />
+        <Preference android:title="抓取蓝牙相关日志信息" android:key="grab_bluebooth" />
+        <Preference android:title="抓取NFC相关日志信息" android:key="grab_nfc" />
+        <Preference android:title="device_log">
+            <intent android:targetPackage="com.oem.oemlogkit" android:action="android.intent.action.MAIN" android:targetClass="com.oem.oemlogkit.DeviceLog" />
+        </Preference>
+        <CheckBoxPreference android:title="数据漫游" android:key="set_roving" android:summary="在境外时请关闭数据漫游" />
+    </PreferenceCategory>
+</PreferenceScreen>

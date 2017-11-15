@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/clear_cache" android:key="clear_cache" />
+    <MultiSelectListPreference android:entries="@array/log_type" android:title="@string/Log_type" android:key="Log_type" android:defaultValue="@array/log_type_def_value" android:entryValues="@array/log_type_value" />
+    <ListPreference android:entries="@array/log_level" android:title="@string/loglevel" android:key="loglevel" android:defaultValue="0" android:entryValues="@array/log_level_value" />
+    <ListPreference android:entries="@array/log_raw" android:title="@string/lograw" android:key="lograw" android:defaultValue="0" android:entryValues="@array/log_raw_value" />
+    <Preference android:title="@string/log_size" android:key="log_size_and_num" />
+    <Preference android:title="@string/filter_log" android:key="filter_log" />
+    <Preference android:title="@string/raw_screenshot" android:key="raw_data" />
+</PreferenceScreen>
